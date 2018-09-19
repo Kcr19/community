@@ -298,7 +298,9 @@ Next you will configure the Mender Client including to connect to Mender Managem
 
 ##### Mender Client Configuration:
 
-This section outlines the steps to connect the Mender Client (Raspberry Pi3 device) to Google Cloud IoT Core as well as Mender Server with the same public/private key authentication and additionally will deploy an OTA update to the device remotely. 
+This section outlines the steps to connect the Mender Client (Raspberry Pi3 device) to Google Cloud IoT Core as well as Mender Server with the same public/private key authentication and additionally will deploy an OTA update to the device remotely as depicted in the below diagram. 
+
+![image alt text](images/Mender-on11.png)
 
 Key components you will use in this section are:
 
