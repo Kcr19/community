@@ -12,7 +12,7 @@ cd poky
 [ -d meta-raspberrypi ] || git clone -b rocko https://github.com/agherzan/meta-raspberrypi
 [ -d meta-java ] || git clone -b rocko git://git.yoctoproject.org/meta-java
 [ -d meta-iot-cloud ] || git clone -b rocko https://github.com/intel-iot-devkit/meta-iot-cloud.git
-[ -d meta-gcp-iot ] || git clone -b master https://github.com/Kcr19/community.git
+[ -d meta-gcp-iot ] || git clone -b master https://github.com/GoogleCloudPlatform/community.git
 source ./oe-init-build-env
 if [ -d ~/downloads ] ; then
     rm -rf ./downloads
@@ -31,7 +31,7 @@ bitbake-layers add-layer -F ../meta-java
 bitbake-layers add-layer -F ../meta-raspberrypi
 bitbake-layers add-layer -F ../meta-mender/meta-mender-raspberrypi
 bitbake-layers add-layer -F ../meta-iot-cloud
-bitbake-layers add-layer -F ../community/tutorials/mender_gcp_ota_demo/image/meta-gcp-iot
+bitbake-layers add-layer -F ../community/tutorials/cloud-iot-mender-ota/image/meta-gcp-iot
 cat > conf/auto.conf <<- EOF
 	MACHINE="raspberrypi3"
 	
